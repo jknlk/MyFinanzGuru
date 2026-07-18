@@ -1,0 +1,52 @@
+[
+  {
+    "id": "sem-2026-08-etf-basics",
+    "title": "ETF Savings Plans — Getting Started the Right Way",
+    "description": "A beginner-friendly live session on how ETF savings plans work, how to pick funds, and how to build a simple, diversified starting portfolio.",
+    "date": "2026-08-12T18:00:00+02:00",
+    "durationMin": 60,
+    "host": "MyFinanzGuru Team",
+    "registrationUrl": "/book",
+    "isPast": false
+  },
+  {
+    "id": "sem-2026-08-gkv-pkv",
+    "title": "GKV vs. PKV — Which Health Insurance Is Right for You?",
+    "description": "We break down the real differences between statutory and private health insurance, who is eligible to switch, and what to check before you decide.",
+    "date": "2026-08-26T18:00:00+02:00",
+    "durationMin": 60,
+    "host": "MyFinanzGuru Team",
+    "registrationUrl": "/book",
+    "isPast": false
+  },
+  {
+    "id": "sem-2026-09-real-estate",
+    "title": "Buying Property in Germany: A Practical Walkthrough",
+    "description": "From budgeting and Grunderwerbsteuer to fixed-interest periods and repayment rates — a practical session for first-time buyers.",
+    "date": "2026-09-09T18:00:00+02:00",
+    "durationMin": 75,
+    "host": "MyFinanzGuru Team",
+    "registrationUrl": "/book",
+    "isPast": false
+  },
+  {
+    "id": "sem-2026-06-inflation",
+    "title": "Inflation and Your Savings — What the Numbers Actually Mean",
+    "description": "A look at how inflation has affected purchasing power in Germany and what it means for money sitting in a savings account.",
+    "date": "2026-06-10T18:00:00+02:00",
+    "durationMin": 60,
+    "host": "MyFinanzGuru Team",
+    "registrationUrl": "/book",
+    "isPast": true
+  },
+  {
+    "id": "sem-2026-05-pension",
+    "title": "Understanding Your Statutory Pension Statement",
+    "description": "How to read your Renteninformation, what the numbers mean, and how to estimate your future pension gap.",
+    "date": "2026-05-14T18:00:00+02:00",
+    "durationMin": 45,
+    "host": "MyFinanzGuru Team",
+    "registrationUrl": "/book",
+    "isPast": true
+  }
+]

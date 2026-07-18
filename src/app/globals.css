@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sky-50: #f5f9ff;
+  --color-sky-100: #eaf2ff;
+  --color-sky-200: #d6e4fa;
+  --color-accent-300: #93c1fd;
+  --color-accent-400: #5b9df8;
+  --color-accent-500: #3b82f6;
+  --color-accent-600: #2563eb;
+  --color-accent-700: #1d4ed8;
+  --color-ink-900: #1e2a3a;
+  --color-ink-800: #2c3e50;
+  --color-ink-600: #55677d;
+  --color-ink-400: #8593a5;
+  --color-ink-200: #d7e0ea;
+  --color-success: #1f8a70;
+  --color-success-bg: #e7f4f0;
+  --color-warn: #b98900;
+  --color-warn-bg: #fbf1da;
+  --color-danger: #b0413e;
+  --color-danger-bg: #fbeae9;
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-hand: var(--font-caveat), cursive;
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--color-sky-50);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+}
+
+.eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent-600);
+  font-weight: 600;
+}
+
+::selection {
+  background: var(--color-accent-300);
+  color: var(--color-ink-900);
+}
+
+.accent-gradient {
+  background-image: linear-gradient(135deg, var(--color-accent-500), var(--color-accent-400));
+}
+
+/* GlassImageCard hover lift — real-hover devices only, so it never sticks on tap. */
+@media (hover: hover) and (pointer: fine) {
+  .glass-hover-lift {
+    transition: transform 300ms ease, border-color 300ms ease;
+  }
+  .glass-hover-lift:hover {
+    transform: translateY(-0.25rem);
+    border-color: rgba(255, 255, 255, 0.4);
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
