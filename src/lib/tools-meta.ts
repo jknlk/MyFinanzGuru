@@ -3,8 +3,8 @@ export interface ToolMeta {
   title: string;
   description: string;
   icon: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 export const TOOLS: ToolMeta[] = [
@@ -47,5 +47,35 @@ export const TOOLS: ToolMeta[] = [
     icon: "Wallet",
     image: "/images/tool-brutto-netto.png",
     imageAlt: "A minimal 3D wallet icon with a calculator, in glossy blue tones",
+  },
+  {
+    slug: "loan-payment",
+    title: "Loan Payment Calculator",
+    description: "Work out your monthly rate, interest and principal split for any loan.",
+    icon: "Landmark",
+  },
+  {
+    slug: "compound-interest",
+    title: "Compound Interest Calculator",
+    description: "See how a lump sum and regular deposits compound over the years.",
+    icon: "TrendingUp",
+  },
+  {
+    slug: "emergency-fund",
+    title: "Emergency Fund Calculator",
+    description: "Find your ideal financial safety net based on your job and living costs.",
+    icon: "ShieldCheck",
+  },
+  {
+    slug: "vat-calculator",
+    title: "VAT Calculator",
+    description: "Convert between net and gross prices at 19%, 7% or a custom VAT rate.",
+    icon: "Percent",
+  },
+  {
+    slug: "calculator",
+    title: "Calculator",
+    description: "A fast everyday calculator with a scientific mode, right in your browser.",
+    icon: "Calculator",
   },
 ];

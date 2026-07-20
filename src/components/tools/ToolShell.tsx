@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { ChevronLeft } from "lucide-react";
 import GlassImageCard from "@/components/ui/GlassImageCard";
+import DynamicIcon from "@/components/ui/DynamicIcon";
 
 export default function ToolShell({
   image,
   imageAlt,
+  icon,
   title,
   intro,
   children,
 }: {
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
+  icon?: string;
   title: string;
   intro: string;
   children: React.ReactNode;
@@ -27,14 +30,20 @@ export default function ToolShell({
 
       <p className="eyebrow mb-3">Your financial start · Tools</p>
       <div className="flex items-center gap-4">
-        <GlassImageCard
-          src={image}
-          alt={imageAlt}
-          aspect="square"
-          hoverLift={false}
-          sizes="96px"
-          className="h-16 w-16 shrink-0"
-        />
+        {image ? (
+          <GlassImageCard
+            src={image}
+            alt={imageAlt ?? title}
+            aspect="square"
+            hoverLift={false}
+            sizes="96px"
+            className="h-16 w-16 shrink-0"
+          />
+        ) : (
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl accent-gradient text-white">
+            <DynamicIcon name={icon ?? "Calculator"} className="h-7 w-7" />
+          </div>
+        )}
         <h1 className="font-serif text-3xl sm:text-4xl text-ink-900">{title}</h1>
       </div>
       <p className="mt-4 max-w-2xl text-ink-600 leading-relaxed">{intro}</p>
