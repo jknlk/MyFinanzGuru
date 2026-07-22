@@ -4,7 +4,7 @@ import BlobShape from "@/components/ui/BlobShape";
 
 export default function AboutTeaser() {
   return (
-    <section className="relative mx-auto max-w-[100rem] px-6 py-20 lg:px-10">
+    <section className="relative mx-auto max-w-[100rem] px-6 pt-8 pb-20 lg:px-10">
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <div data-reveal className="relative">
           <BlobShape tone="accent" size={260} className="-left-10 -top-10" />

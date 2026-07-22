@@ -4,7 +4,7 @@ import { NAV_LINKS } from "@/lib/nav";
 
 export default function Footer() {
   return (
-    <footer className="mt-24 bg-ink-900">
+    <footer className="mt-12 bg-ink-900">
       <div className="mx-auto max-w-[100rem] px-6 py-14 lg:px-10">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>

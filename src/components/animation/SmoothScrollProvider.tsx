@@ -33,16 +33,23 @@ export default function SmoothScrollProvider({
 
     lenis.on("scroll", ScrollTrigger.update);
 
-    gsap.ticker.add((time) => {
+    // Lenis caches the scrollable length up front. Whenever ScrollTrigger
+    // recalculates (e.g. a pinned section changes the document height),
+    // Lenis must resize too, or it clamps scroll before the real bottom.
+    ScrollTrigger.addEventListener("refresh", () => lenis.resize());
+
+    const raf = (time: number) => {
       lenis.raf(time * 1000);
-    });
+    };
+    gsap.ticker.add(raf);
     gsap.ticker.lagSmoothing(0);
 
+    ScrollTrigger.refresh();
+
     return () => {
+      ScrollTrigger.removeEventListener("refresh", () => lenis.resize());
       lenis.destroy();
-      gsap.ticker.remove((time) => {
-        lenis.raf(time * 1000);
-      });
+      gsap.ticker.remove(raf);
     };
   }, []);
 

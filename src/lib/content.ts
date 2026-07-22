@@ -15,6 +15,8 @@ const seminarSchema = z.object({
   host: z.string(),
   registrationUrl: z.string(),
   isPast: z.boolean(),
+  image: z.string().optional(),
+  imageAlt: z.string().optional(),
 });
 
 export type Seminar = z.infer<typeof seminarSchema>;

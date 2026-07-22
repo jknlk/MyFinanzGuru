@@ -44,13 +44,13 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-white/85" />
         <BlobShape tone="accent" size={300} className="-right-20 -top-20" />
-        <div className="relative mx-auto max-w-6xl px-6 py-14 sm:py-20 lg:px-10">
+        <div className="relative mx-auto max-w-6xl px-6 py-8 sm:py-10 lg:px-10">
           <div className="relative max-w-2xl" data-reveal>
-            <p className="eyebrow mb-3">About us</p>
+            <p className="eyebrow mb-2">About us</p>
             <h1 className="font-serif text-4xl sm:text-5xl text-ink-900 leading-tight">
               A team on your side.
             </h1>
-            <p className="mt-5 text-ink-600 leading-relaxed">
+            <p className="mt-3 text-ink-600 leading-relaxed">
               MyFinanzGuru is a collective of independent consultants bringing clarity to the
               German financial world. We started this because good financial guidance is too
               often locked behind sales targets and jargon — we think everyone deserves a clear,
@@ -60,7 +60,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 pb-16 pt-10 lg:px-10">
+      <div className="mx-auto max-w-6xl px-6 pb-10 pt-8 lg:px-10">
         <h2 className="font-serif text-2xl text-ink-900 mb-6" data-reveal>
           Founder &amp; Management
         </h2>

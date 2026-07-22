@@ -21,14 +21,14 @@ import {
 const CARD_PILLS = [
   { icon: ShieldCheck, title: "100% Independent", sub: "No sales pressure" },
   { icon: SlidersHorizontal, title: "Tailored for You", sub: "Personal strategy" },
-  { icon: PiggyBank, title: "More for Your Future", sub: "Keep more, stress less" },
+  { icon: PiggyBank, title: "More for Future", sub: "Keep more, stress less" },
 ];
 
 const BARS = [
-  { height: 28, color: "bg-accent-600" },
-  { height: 46, color: "bg-accent-500" },
-  { height: 68, color: "bg-accent-400" },
-  { height: 92, color: "bg-accent-300" },
+  { height: 30, color: "bg-accent-600" },
+  { height: 50, color: "bg-accent-500" },
+  { height: 72, color: "bg-accent-400" },
+  { height: 96, color: "bg-accent-300" },
 ];
 
 const TRUST_ITEMS = [
@@ -134,11 +134,11 @@ export default function Hero() {
       <BlobShape tone="accent" size={440} className="-left-40 -top-40" />
       <BlobShape tone="dark-accent" size={260} className="left-[28%] top-1/3 hidden lg:block" />
 
-      <div className="relative mx-auto max-w-7xl px-6 pt-14 pb-16 lg:px-10 lg:pt-20 lg:pb-20">
+      <div className="relative mx-auto max-w-[100rem] px-6 pt-6 pb-6 lg:px-12 lg:pt-8 lg:pb-8 xl:px-20">
         <div className="relative">
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
           <div className="relative z-20">
-            <p data-hero-anim data-hero-eyebrow className="eyebrow mb-5">
+            <p data-hero-anim data-hero-eyebrow className="eyebrow mb-3">
               Trusted by families across Germany
             </p>
             <h1 className="font-serif text-4xl leading-[1.05] text-ink-900 sm:text-5xl lg:text-6xl">
@@ -173,11 +173,11 @@ export default function Hero() {
                 </span>
               ))}
             </h1>
-            <p data-hero-anim data-hero-sub className="mt-6 max-w-sm text-base text-ink-600 leading-relaxed">
+            <p data-hero-anim data-hero-sub className="mt-4 max-w-xs text-sm text-ink-600 leading-relaxed">
               Independent financial guidance for people living in Germany — keep more of your
               salary, build your future, free and without sales pressure.
             </p>
-            <div data-hero-anim data-hero-ctas className="mt-8 flex flex-wrap gap-4">
+            <div data-hero-anim data-hero-ctas className="mt-5 flex flex-wrap gap-4">
               <Button href="/book" size="lg">
                 Start for free →
               </Button>
@@ -185,12 +185,12 @@ export default function Hero() {
                 Try our free tools
               </Button>
             </div>
-            <div data-hero-anim data-hero-trust className="mt-9 flex items-center gap-3">
+            <div data-hero-anim data-hero-trust className="mt-5 flex items-center gap-3">
               <div className="flex -space-x-3">
                 {["#93C1FD", "#5B9DF8", "#2563EB", "#1D4ED8"].map((color, i) => (
                   <span
                     key={i}
-                    className="h-10 w-10 rounded-full border-2 border-white"
+                    className="h-9 w-9 rounded-full border-2 border-white"
                     style={{ backgroundColor: color }}
                   />
                 ))}
@@ -210,11 +210,11 @@ export default function Hero() {
             ref={visualRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="relative z-10 aspect-[4/5] w-full max-w-md justify-self-center rounded-[2rem] bg-gradient-to-br from-accent-500 to-accent-700 p-8 shadow-xl lg:justify-self-end"
+            className="relative z-10 aspect-[4/5.8] w-full max-w-lg justify-self-center rounded-[2rem] bg-gradient-to-br from-accent-500 to-accent-700 px-8 pb-8 pt-5 shadow-xl lg:aspect-[4/3.9] lg:justify-self-end"
             style={{ transformStyle: "preserve-3d" }}
           >
             <p
-              className="text-2xl leading-snug text-white/95"
+              className="text-center text-2xl leading-snug text-white/95"
               style={{ fontFamily: "var(--font-hand)" }}
             >
               Independent.
@@ -239,11 +239,11 @@ export default function Hero() {
               </span>
             </p>
 
-            <div className="mt-8 grid grid-cols-3 gap-2.5">
+            <div className="mt-6 ml-12 mr-6 grid grid-cols-3 gap-2.5">
               {CARD_PILLS.map((pill) => (
-                <div key={pill.title} className="rounded-xl bg-white/15 p-2.5 backdrop-blur-sm">
+                <div key={pill.title} className="rounded-lg bg-white/15 p-2 backdrop-blur-sm">
                   <pill.icon className="h-4 w-4 text-white" />
-                  <p className="mt-2 text-[11px] font-semibold leading-tight text-white">
+                  <p className="mt-1.5 text-[11px] font-semibold leading-tight text-white">
                     {pill.title}
                   </p>
                   <p className="text-[10px] leading-tight text-white/75">{pill.sub}</p>
@@ -251,7 +251,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="absolute bottom-6 left-14 right-6 rounded-2xl bg-white p-5 pt-6 shadow-lg">
+            <div className="absolute bottom-5 left-20 right-14 rounded-lg bg-white p-5 pt-6 shadow-lg">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-100 text-accent-600">
                 <PieChart className="h-4.5 w-4.5" />
               </div>
@@ -277,7 +277,7 @@ export default function Hero() {
                   aria-hidden
                 >
                   <path
-                    d="M12 68 L38 48 L63 26 L86 6"
+                    d="M12 70 L38 50 L63 28 L86 4"
                     stroke="var(--color-accent-600)"
                     strokeWidth="2.5"
                     strokeLinecap="round"
@@ -291,7 +291,7 @@ export default function Hero() {
                 />
               </div>
 
-              <div className="pointer-events-none absolute -top-5 right-4 flex w-16 flex-col items-center rounded-2xl bg-accent-600 px-2 py-2 text-center leading-tight text-white shadow-md">
+              <div className="pointer-events-none absolute -top-3 right-4 flex w-16 flex-col items-center rounded-2xl bg-accent-600 px-2 py-2 text-center leading-tight text-white shadow-md lg:-top-5">
                 <span className="text-sm font-bold">+28%</span>
                 <span className="text-[9px] font-medium opacity-90">Potential Increase</span>
               </div>
@@ -301,29 +301,23 @@ export default function Hero() {
 
         <div
           data-hero-advisor
-          className="pointer-events-none absolute inset-y-0 left-1/2 z-20 hidden -translate-x-[46%] items-end lg:flex"
+          className="pointer-events-none absolute -bottom-16 top-0 left-1/2 z-20 hidden -translate-x-[18%] items-end lg:flex"
         >
           <Image
             src="/images/herosection/advisor.png"
             alt="Financial advisor smiling over her shoulder"
             width={484}
             height={938}
-            className="h-[88%] w-auto object-contain"
+            className="h-full w-auto object-contain"
             priority
           />
 
-          <div className="pointer-events-none absolute left-1/2 top-[10%] flex h-14 w-14 -translate-x-[130%] items-center justify-center rounded-full border border-white/70 bg-white/85 shadow-lg backdrop-blur-sm">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full accent-gradient text-white">
-              <ShieldCheck className="h-4.5 w-4.5" />
-            </div>
-          </div>
-
-          <div className="pointer-events-none absolute left-1/2 top-[48%] h-9 w-9 -translate-x-[175%] rounded-full border-2 border-dashed border-accent-300/70" />
+          <div className="pointer-events-none absolute left-1/2 top-[44%] h-9 w-9 -translate-x-[310%] rounded-full border-2 border-dashed border-accent-300/70" />
         </div>
         </div>
 
-        <div data-hero-band className="relative z-20 mt-14 lg:mt-20">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-6 rounded-3xl border border-white/60 bg-white/90 p-6 shadow-lg backdrop-blur-sm sm:grid-cols-4 sm:gap-0 sm:divide-x sm:divide-ink-200/60 sm:p-8">
+        <div data-hero-band className="relative z-20 mt-6 lg:mt-8">
+          <div className="grid grid-cols-2 gap-x-6 gap-y-4 rounded-3xl border border-white/60 bg-white/90 p-4 shadow-lg backdrop-blur-sm sm:grid-cols-4 sm:gap-0 sm:divide-x sm:divide-ink-200/60 sm:p-5">
             {TRUST_ITEMS.map((item) => (
               <div key={item.title} className="flex items-center gap-3 sm:px-6 sm:first:pl-0 sm:last:pr-0">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sky-100 text-accent-600">

@@ -7,7 +7,9 @@
     "durationMin": 60,
     "host": "MyFinanzGuru Team",
     "registrationUrl": "/book",
-    "isPast": false
+    "isPast": false,
+    "image": "/images/guide-etf.png",
+    "imageAlt": "A minimal 3D illustration representing ETF savings growth"
   },
   {
     "id": "sem-2026-08-gkv-pkv",
@@ -17,7 +19,9 @@
     "durationMin": 60,
     "host": "MyFinanzGuru Team",
     "registrationUrl": "/book",
-    "isPast": false
+    "isPast": false,
+    "image": "/images/guide-gkv-pkv.png",
+    "imageAlt": "A minimal 3D illustration comparing statutory and private health insurance"
   },
   {
     "id": "sem-2026-09-real-estate",
@@ -27,7 +31,9 @@
     "durationMin": 75,
     "host": "MyFinanzGuru Team",
     "registrationUrl": "/book",
-    "isPast": false
+    "isPast": false,
+    "image": "/images/service-real-estate.png",
+    "imageAlt": "A modern German apartment building facade under a clear blue sky"
   },
   {
     "id": "sem-2026-06-inflation",
@@ -37,7 +43,9 @@
     "durationMin": 60,
     "host": "MyFinanzGuru Team",
     "registrationUrl": "/book",
-    "isPast": true
+    "isPast": true,
+    "image": "/images/guide-inflation.png",
+    "imageAlt": "A minimal 3D illustration representing inflation eroding savings"
   },
   {
     "id": "sem-2026-05-pension",

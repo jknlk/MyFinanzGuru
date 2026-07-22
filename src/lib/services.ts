@@ -24,7 +24,8 @@ export const SERVICES: Service[] = [
     title: "Private Credits",
     summary: "Independent comparison and structuring of personal and consumer loans.",
     icon: "HandCoins",
-    image: "/images/service-private-credits.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._a_close_up_of_a_high_end_credit/screen.png",
     imageAlt: "A house key, pen, and loan documents laid out on a white linen surface",
     intro:
       "Whether you're consolidating existing debt, financing a large purchase, or bridging a temporary gap, the terms of a private loan can vary enormously between providers. We compare offers across the market and help you structure a loan that fits your budget — not the other way around.",
@@ -53,7 +54,8 @@ export const SERVICES: Service[] = [
     title: "Child Future & Educational Planning",
     summary: "Build a dedicated fund for your child's education and future independence.",
     icon: "Baby",
-    image: "/images/service-child-future.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._a_minimalist_representation_of/screen.png",
     imageAlt: "A parent and child putting a coin into a clear glass savings jar",
     intro:
       "Education costs, a first car, a deposit for an apartment — the financial milestones of childhood add up. We help you build a long-term, low-effort savings plan for your child so those moments arrive with money already set aside, not scrambled together.",
@@ -82,7 +84,8 @@ export const SERVICES: Service[] = [
     title: "Private Health Insurance",
     summary: "An honest, side-by-side look at whether PKV makes sense for you.",
     icon: "HeartPulse",
-    image: "/images/service-health-insurance.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._a_person_s_hands_signing_a/screen.png",
     imageAlt: "A stethoscope resting on a white folder beside a navy blue pen on a desk",
     intro:
       "Switching from statutory (GKV) to private health insurance (PKV) is one of the most consequential — and hardest to reverse — financial decisions you'll make in Germany. We walk through your eligibility, your health situation, and your long-term plans before recommending anything.",
@@ -111,7 +114,8 @@ export const SERVICES: Service[] = [
     title: "Real Estate Investment",
     summary: "From your first owner-occupied home to a diversified property portfolio.",
     icon: "Home",
-    image: "/images/service-real-estate.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._an_abstract_minimalist/screen.png",
     imageAlt: "A modern German apartment building facade under a clear blue sky",
     intro:
       "Real estate remains one of the most trusted ways to build wealth in Germany — but the financing structure, the state you buy in, and the interest environment all change the calculation. We help you understand what you can realistically afford and how to structure the financing.",
@@ -140,7 +144,8 @@ export const SERVICES: Service[] = [
     title: "Physical Gold & Silver Investment",
     summary: "Diversify part of your portfolio into physical precious metals.",
     icon: "Coins",
-    image: "/images/service-gold-silver.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography_for_a_mobile_bank._a_person_in_a/screen.png",
     imageAlt: "A stack of gold bars and silver coins on a cool slate gray surface",
     intro:
       "Physical gold and silver can act as a hedge against inflation and market volatility when held as a modest part of a diversified portfolio. We explain the practical side — storage, purity, dealer selection, and tax treatment — so you avoid the common pitfalls.",
@@ -169,7 +174,8 @@ export const SERVICES: Service[] = [
     title: "All Finance Prime",
     summary: "Our holistic, 360° review across every area of your finances.",
     icon: "LayoutGrid",
-    image: "/images/service-finance-prime.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography_for_a_finance_app._a_confident/screen.png",
     imageAlt: "An overhead view of an organized desk with financial charts and a smartphone",
     intro:
       "All Finance Prime is our flagship offering: a complete review of your income, expenses, insurance, tax situation, pension outlook, and investments — brought together into a single, prioritized action plan instead of scattered advice.",
@@ -198,7 +204,8 @@ export const SERVICES: Service[] = [
     title: "Tax & Retirement Savings",
     summary: "Reduce your tax burden today while building your pension for tomorrow.",
     icon: "PiggyBank",
-    image: "/images/service-tax-retirement.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._a_top_down_view_of_a_clean/screen.png",
     imageAlt: "An hourglass with white sand beside a neat document stack and reading glasses",
     intro:
       "Germany's pension and tax systems reward those who plan ahead — Riester, Rürup, company pensions (bAV), and VL all offer incentives that are easy to leave on the table if nobody explains them clearly. We help you use what's available to you.",
@@ -227,7 +234,8 @@ export const SERVICES: Service[] = [
     title: "Insurance & Protection",
     summary: "The right coverage for the risks that could actually hurt you.",
     icon: "ShieldCheck",
-    image: "/images/service-insurance-protection.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography._two_professionals_shaking_hands/screen.png",
     imageAlt: "A navy blue umbrella sheltering a small model house and family figurines",
     intro:
       "Most people are over-insured against small risks and under-insured against the ones that matter — like losing the ability to work. We review your existing policies and recommend coverage based on real risk, not sales quotas.",
@@ -256,7 +264,8 @@ export const SERVICES: Service[] = [
     title: "Fund & ETF Strategy",
     summary: "A disciplined, low-cost investment strategy built around your goals.",
     icon: "TrendingUp",
-    image: "/images/service-fund-etf.png",
+    image:
+      "/images/service%20page/stitch_horizontal_finance_visuals/professional_high_quality_portrait_photography_for_a_mobile_financial_services/screen.png",
     imageAlt: "A minimal 3D illustration of a rising line chart with coins, in glossy blue tones",
     intro:
       "Building wealth through markets doesn't require picking stocks or timing the market — it requires a disciplined, diversified, low-cost strategy you can stick with for decades. We help you design and automate exactly that.",

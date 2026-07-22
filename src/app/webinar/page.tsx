@@ -6,6 +6,7 @@ import { getSeminars } from "@/lib/content";
 import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import CTABand from "@/components/ui/CTABand";
+import GlassImageCard from "@/components/ui/GlassImageCard";
 import RevealScope from "@/components/animation/RevealScope";
 
 export const metadata: Metadata = {
@@ -35,7 +36,7 @@ export default function WebinarPage() {
 
   return (
     <RevealScope>
-      <div className="relative h-[380px] w-full sm:h-[440px]" data-reveal>
+      <div className="relative h-[240px] w-full sm:h-[280px]" data-reveal>
         <Image
           src="/images/webinar-hero.png"
           alt="A laptop on a tidy desk in the evening, showing a blurred video presentation"
@@ -45,12 +46,12 @@ export default function WebinarPage() {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-900/85 via-ink-900/30 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-6 pb-8 lg:px-10">
-          <p className="eyebrow !text-accent-400 mb-3">Free Webinars</p>
+        <div className="absolute inset-x-0 bottom-0 mx-auto max-w-6xl px-6 pb-6 lg:px-10">
+          <p className="eyebrow !text-accent-400 mb-2">Free Webinars</p>
           <h1 className="font-serif text-4xl text-white sm:text-5xl leading-tight">
             Free Financial Webinars
           </h1>
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap gap-2">
             {PILLS.map((pill) => (
               <span
                 key={pill}
@@ -63,7 +64,7 @@ export default function WebinarPage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-10">
+      <div className="mx-auto max-w-6xl px-6 py-8 lg:px-10">
         <div>
           <h2 className="font-serif text-2xl text-ink-900 mb-6" data-reveal>
             Upcoming sessions
@@ -78,9 +79,18 @@ export default function WebinarPage() {
               </div>
             </Card>
           ) : (
-            <div className="grid gap-5 sm:grid-cols-2" data-reveal-group="upcoming">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-reveal-group="upcoming">
               {upcoming.map((seminar) => (
                 <Card key={seminar.id} data-reveal className="flex flex-col">
+                  {seminar.image && (
+                    <GlassImageCard
+                      src={seminar.image}
+                      alt={seminar.imageAlt ?? seminar.title}
+                      aspect="video"
+                      sizes="(min-width: 1024px) 360px, (min-width: 640px) 50vw, 100vw"
+                      className="mb-4"
+                    />
+                  )}
                   <p className="font-serif text-lg text-ink-900">{seminar.title}</p>
                   <p className="mt-2 flex-1 text-sm text-ink-600 leading-relaxed">
                     {seminar.description}
@@ -114,7 +124,7 @@ export default function WebinarPage() {
         </div>
 
         {past.length > 0 && (
-          <div className="mt-16">
+          <div className="mt-10">
             <h2 className="font-serif text-2xl text-ink-900 mb-6" data-reveal>
               Past topics
             </h2>
@@ -133,7 +143,7 @@ export default function WebinarPage() {
           </div>
         )}
 
-        <div className="mt-16">
+        <div className="mt-10">
           <CTABand
             heading="Prefer a 1:1 conversation?"
             sub="Book a free 30-minute call whenever suits you."

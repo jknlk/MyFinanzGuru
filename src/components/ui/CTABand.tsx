@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "./Button";
 import BlobShape from "./BlobShape";
 
@@ -17,6 +18,15 @@ export default function CTABand({
       className="relative overflow-hidden rounded-3xl bg-ink-900 px-8 py-14 text-center sm:px-16 sm:py-16"
       data-reveal
     >
+      <Image
+        src="/images/service-real-estate.png"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover"
+        aria-hidden
+      />
+      <div className="absolute inset-0 bg-ink-900/80" aria-hidden />
       <BlobShape tone="dark-accent" size={340} className="-right-24 -top-24" />
       <BlobShape tone="accent" size={260} className="-bottom-20 -left-16" />
       <div className="relative">
